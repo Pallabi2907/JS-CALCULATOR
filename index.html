@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator with EvenLister </title>
+    
+</head>
+<body>
+    <h2>JavaScript Calculator</h2>
+
+<p>Number 1: <input id='number1'type="number"></p>
+<p>Number 2: <input id='number2' type="number"></p>
+<button id="myBtn1">Add</button>
+<button id="myBtn2">Subtract</button>
+<button id="myBtn3">Multiply</button>
+<button id="myBtn4">Divide</button>
+<p id="demo"></p>
+
+</body>
+<script>
+    document.getElementById("myBtn1").addEventListener("click", displayAdd);
+
+function displayAdd() {
+  var a = Number(document.getElementById('number1').value);
+  var b= Number(document.getElementById('number2').value);;
+  var c= a + b;
+  document.getElementById("demo").innerHTML = c;
+}
+document.getElementById("myBtn2").addEventListener("click", displaySub);
+
+function displaySub() {
+ var a = Number(document.getElementById('number1').value);
+  var b= Number(document.getElementById('number2').value);;
+  var c= a - b;
+  document.getElementById("demo").innerHTML = c;
+}
+document.getElementById("myBtn3").addEventListener("click", displayMul);
+
+function displayMul() {
+  var a = Number(document.getElementById('number1').value);
+  var b= Number(document.getElementById('number2').value);;
+  var c= a * b;
+  document.getElementById("demo").innerHTML = c;
+}
+document.getElementById("myBtn4").addEventListener("click", displayDiv);
+
+function displayDiv() {
+  var a = Number(document.getElementById('number1').value);
+  var b= Number(document.getElementById('number2').value);;
+  var c= a / b;
+  document.getElementById("demo").innerHTML = c;
+}
+
+
+</script>
+</html>
